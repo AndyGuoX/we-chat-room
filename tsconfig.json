@@ -7,6 +7,7 @@
       "esnext"
     ],
     "allowJs": true,
+    "noImplicitAny": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -21,5 +22,6 @@
   },
   "include": [
     "src"
-  ]
+  ],
+  "extends": "./tsconfig.path"
 }

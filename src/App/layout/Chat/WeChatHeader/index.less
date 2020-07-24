@@ -1,0 +1,48 @@
+.chat-header-wrapper {
+  height: 100px;
+  padding: 24px;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e9f2;
+
+  .user-info-show {
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+    overflow: hidden;
+
+    .user-info {
+      .user-avatar {
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        margin-right: 10px;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+
+      .nickname {
+        font-size: 18px;
+        font-weight: bold;
+        vertical-align: middle;
+      }
+    }
+
+    .user-operator {
+
+      .operator-list {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0;
+
+        .operator-item {
+          cursor: pointer;
+          transition: .3s;
+
+          &:hover {
+            color: @chatMainColor;
+          }
+        }
+      }
+    }
+  }
+}
